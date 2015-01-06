@@ -1,0 +1,27 @@
+name: node-odps
+main: index.js
+version: 0.0.3
+description: 'node odps'
+author:
+  name: tianmo
+  email: azhangwq@gmail.com
+engines:
+  node: >=0.8.0
+homepage: https://github.com/tianmo/node-odps
+repository:
+  type: git
+  url: https://github.com/tianmo/node-odps.git
+bugs:
+  url: https://github.com/tianmo/node-odps/issues
+dependencies: {}
+devDependencies:
+  coffee-script: '*'
+  mocha: '*'
+  expect.js: '*'
+  istanbul: '*'
+  yamljs: '*'
+  connect: '*'
+scripts:
+  prepublish: make release
+  postpublish: make clean
+  test: make test-cov
